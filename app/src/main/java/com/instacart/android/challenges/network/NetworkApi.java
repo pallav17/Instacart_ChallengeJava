@@ -14,7 +14,7 @@ public interface NetworkApi {
     Observable<OrdersResponse> fetchOrderObservable();
 
     @GET("order/{order_id}")
-    Call<OrdersResponse> fetchOrderById(@Path("order_id") Long id);
+    Call<OrderResponse> fetchOrderById(@Path("order_id") Long id);
 
     @GET("discount/{item_id}")
     Call<DiscountResponse> discount();
