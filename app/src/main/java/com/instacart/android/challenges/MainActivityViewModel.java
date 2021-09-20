@@ -20,7 +20,6 @@ public class MainActivityViewModel
     public interface UpdateListener {
 
         public void onUpdate(ItemListViewState state);
-
         public void onFailure(Exception e);
 
     }
